@@ -1,0 +1,85 @@
+/* @import url('https://fonts.googleapis.com/css?family=Roboto'); */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+.d-none{
+  display: none;
+}
+
+
+.service-thumb-wrap {
+  overflow: hidden;
+  display: block;
+}
+.service-thumb-wrap:hover  .service-thumb{
+  transform: scale(1.1);  
+}
+.service-thumb {
+  height: 250px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-color: #ddd;
+  overflow: hidden;
+  transition: all .5s ease;
+}
+.services-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+.single-service-item {
+  position: relative;
+  border: 1px solid #D9AD53;
+  padding: 15px;
+  /* background-color: #fff; */
+}
+.service-content {
+  color: #727780;
+  padding: 20px 0px 5px;
+}
+.service-content a, .service-content a h2 {
+  color: #000000;
+  display: block;
+  transition: all .3s ease;
+}
+.service-content a:hover, .service-content a:hover h2{
+  color: #D9AD53;
+}
+.service-content h2 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1em;
+  margin: 0 0 15px;
+}
+.service-content .learn-btn {
+  font-size: 18px;
+  font-weight: 500;
+  color: #D9AD53;
+  transition: all .3s ease;
+}
+.service-content .learn-btn:hover {
+  color: #1D2E5B;
+}
+.service-content .learn-btn i {
+  transform: rotate(-45deg);
+  position: relative;
+  bottom: 1px;
+  right: -5px;
+  font-size: 15px;
+}
+
+
+@media  (max-width: 768px) {
+
+  .services-section {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+  }
+  .service-thumb{
+    height: 200px;
+  }
+
+}
